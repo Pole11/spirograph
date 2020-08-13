@@ -29,10 +29,8 @@ The values p, r and R refers to the values you can find on this image of <a href
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/3/39/Resonance_Cascade.svg)
 
 ## Images 
-![image](/images/screenshoot1.png)
+![image](/images/screenshoot2.png)
 ![image](/images/spirograph1.jpg)
 ![image](/images/spirograph2.jpg)
-
-
-
-
+![image](/images/spirograph3.jpg)
+![image](/images/spirograph5.jpg)
