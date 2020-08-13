@@ -19,12 +19,14 @@ let blue = 0;
 let alpha = 255;
 
 let offset = 40;
+
 let sliderwidth = '150px';
 
 var c;
 var makeAppear = true;
 var showInfo = false;
 var showInfoDelay;
+
 var dcx = 100;
 
 function setup() {
@@ -160,12 +162,12 @@ function draw() {
   if (showInfo) {
     showInfoDelay -= 1;
     fill(0,0,0,showInfoDelay);
-    rect(-30,-35,200,180);
+    rect(-100,-90,200,180);
     fill(255,255,255, showInfoDelay);
-    info_text1 = text("🗑 -> delete", 0, 0);
-    info_text2 = text("💾 -> save", 0, offset);
-    info_text3 = text("⬆🖊⬆ -> pen up", 0, offset*2);
-    info_text4 = text("⬇🖊⬇ -> pen down", 0, offset*3); 
+    info_text1 = text("🗑 -> delete", -100+30, -90 + 30);
+    info_text2 = text("💾 -> save", -100+30, -90 + 30 + offset);
+    info_text3 = text("⬆🖊⬆ -> pen up", -100+30, -90 + 30 + offset*2);
+    info_text4 = text("⬇🖊⬇ -> pen down", -100+30, -90 + 30 + offset*3); 
   }  
   
   if (showInfoDelay < 0) {
@@ -206,19 +208,19 @@ function saveImage() {
   saveCanvas(c, 'spirograph', 'jpg');
 }
 
-// penup
+// penup (show the line)
 function penup() {
   makeAppear = false;
   alpha *= 0;
 }
 
-// pendown
+// pendown (don't show the line)
 function pendown(){
   makeAppear = true;
   alpha = alpha_slider.value();
 }
 
-// show info
+// show the info
 function makeInfoVisible() {
   showInfoDelay = 60 * 5;
   showInfo = true;
