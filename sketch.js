@@ -19,14 +19,12 @@ let blue = 0;
 let alpha = 255;
 
 let offset = 40;
-
 let sliderwidth = '150px';
 
 var c;
 var makeAppear = true;
 var showInfo = false;
 var showInfoDelay;
-
 var dcx = 100;
 
 function setup() {
@@ -127,7 +125,6 @@ function draw() {
   if (makeAppear) {
     alpha = alpha_slider.value();
   } else {
-    
     alpha *= 0;
   }
       
@@ -215,11 +212,13 @@ function penup() {
   alpha *= 0;
 }
 
+// pendown
 function pendown(){
   makeAppear = true;
   alpha = alpha_slider.value();
 }
 
+// show info
 function makeInfoVisible() {
   showInfoDelay = 60 * 5;
   showInfo = true;
