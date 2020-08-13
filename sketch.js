@@ -161,7 +161,7 @@ function draw() {
   
   if (showInfo) {
     showInfoDelay -= 1;
-    fill(0,0,0,showInfoDelay);
+    fill(0,15,15,showInfoDelay);
     rect(-100,-90,200,180);
     fill(255,255,255, showInfoDelay);
     info_text1 = text("🗑 -> delete", -100+30, -90 + 30);
