@@ -131,6 +131,7 @@ function draw() {
   line(x2, y2, x3_end, y3_end);
   
   if (frameCount > 1) {
+    canvas2.strokeWeight(2);
     canvas2.stroke(255);
     canvas2.line(px3_end, py3_end, x3_end, y3_end);
     fill(255);
