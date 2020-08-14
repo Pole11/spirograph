@@ -30,7 +30,7 @@ To run this project, you can:
 To draw a spirograph, just play around with the slider, change the shape and the colors and then press the button with the 💾 icon ('save image' button) to save the image. If you messed up and you want to clean the canvas press the button with the 🗑 icon ('delete' button). The ⬆🖊⬆ button is the 'penup' button, if you press it, the program will stop drawing, maybe if you want to save an uncompleted spirograph you can press this button. The ⬇🖊⬇ button is the 'pendown' button, it continues drawing if you pressed the 'penup' button. If you forget what, button does what press the ℹ button, it's the info button and will show you for a few seconds what the buttons do.
 
 ## Explanation
-If you don't understand how a spirograph works, you can see this <a href="https://editor.p5js.org/Pole/full/5Ag12j_je">link</a>, it will show you another program that I've done that shows all the different values changing in real time and how they do affect the final drawing.
+If you don't understand how a spirograph works, you can see this <a href="https://editor.p5js.org/Pole/full/5Ag12j_je">link</a>, it will show you another program that I've done that shows all the different values changing in real time and how they do affect the final drawing, it's not perfect, but it gives the general idea.
 
 The values p, r and R refers to the values you can find on this image of <a href="https://en.wikipedia.org/wiki/Spirograph">Wikipedia</a>
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/3/39/Resonance_Cascade.svg)
