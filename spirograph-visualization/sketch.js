@@ -133,6 +133,9 @@ function draw() {
   if (frameCount > 1) {
     canvas2.stroke(255);
     canvas2.line(px3_end, py3_end, x3_end, y3_end);
+    fill(255);
+    noStroke();
+    ellipse(x3_end, y3_end, 8, 8);
   }
   
   px3_end = x3_end;
