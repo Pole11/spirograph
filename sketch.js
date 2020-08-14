@@ -31,6 +31,7 @@ var dcx = 100;
 
 function setup() {
   // put setup code here
+  // it runs only one time
   createCanvas(windowWidth,windowHeight);
   cx=width/2;
   cy=height/2;
@@ -101,6 +102,7 @@ function setup() {
 }
 
 function draw() {
+  // it's a while loop
   // put drawing code here
   background(0,25,25);
   translate(cx+dcx, cy);
@@ -109,7 +111,7 @@ function draw() {
   let offset = height/20;
   
   fill(0,15,15);
-  rect(-cx-dcx,-cy, 150 + offset, height)
+  rect(-cx-dcx,-cy, 150 + offset, height);
 
   // assing values of the sliders for the shape
   p = p_slider.value();
@@ -173,7 +175,8 @@ function draw() {
   if (showInfoDelay < 0) {
     showInfoDelay = 0;
   }
-    
+  
+  // values for drawing the shape
   k = r/R;
   l = p/r;
   
@@ -187,9 +190,11 @@ function draw() {
     noStroke();
     canvas2.stroke(red,green,blue,alpha);
     fill(red,green,blue);
-    let diameter = map(thickness, 1, 50, 8, 60)
+    let diameter = map(thickness, 1, 50, 8, 60);
+    // pen
     ellipse(x,y,diameter,diameter);
     canvas2.strokeWeight(thickness);
+    // the actual line of the spirograph
     canvas2.line(px,py,x,y);
   }
 
